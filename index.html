@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Balance Chemical Equations</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Balance Chemical Equations</h1>
+  </header>
+  <div class="main">
+    <main>
+      <label for="inputString">Enter a string of chemical equations:</label>
+      <input type="text" id="inputString" placeholder="H2 + O2 = H2O">
+      <div id="output">
+        <h1 id="outputPthh"></h1>
+        <div id="element"></div>
+        <div class="note" id="noteDiv">
+          Note: Chemical elements will have the first letter of each element capitalized, for example: Ca, Cu, Al, O,
+          He,
+          Mn, Cs, Ag, Hg,...
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer>
+    <div id="footerContent"></div>
+  </footer>
+  <script type="module" src="popup.js"></script>
+  <script>
+    function updateFooter() {
+      const footerContent = document.getElementById('footerContent');
+      const now = new Date();
+      const timeString = now.toLocaleTimeString();
+      const year = now.getFullYear();
+      footerContent.textContent = `Current Time: ${timeString} | Year: ${year}`;
+    }
+    setInterval(updateFooter, 1000);
+  </script>
+</body>
+
+</html>

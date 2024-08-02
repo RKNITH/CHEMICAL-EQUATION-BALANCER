@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inputString" placeholder="H2 + O2 = H2O">
+    <button id="displayButton" onclick="check()">Get results</button>
+
+
+    <script src="pthh.js"></script>
+
+    <script>
+        const originalString = "This → is → a → test.";
+const replacedString = originalString.replace(/→/g, "=");
+console.log(replacedString);
+
+        function check(){
+            const inputValue = document.getElementById("inputString").value;
+            const result = pthh(inputValue);
+            console.log(result);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f8ff;
+    /* Light blue background */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header h1 {
+    background-color: #4CAF50;
+    /* Green background for header */
+    color: white;
+    padding: 1em;
+    text-align: center;
+    -webkit-box-shadow: 0 4px 6px -6px #222;
+    /* Webkit shadow for header */
+    -moz-box-shadow: 0 4px 6px -6px #222;
+    box-shadow: 0 4px 6px -6px #222;
+}
+
+.main {
+    flex: 1;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#output {
+    margin-top: 1em;
+    width: 100%;
+    max-width: 400px;
+}
+
+#output h1 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.note {
+    font-size: 0.9em;
+    color: #777;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    /* Dark background for footer */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 760px) {
+    header {
+        font-size: 1.2em;
+    }
+
+    input[type="text"] {
+        padding: 3rem;
+        font-size: 6rem;
+
+    }
+
+    #output h1 {
+        font-size: 1.2em;
+    }
+
+    .note {
+        font-size: 0.8em;
+    }
+
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+
+    }
+
+    footer {
+        padding: 20px 30px;
+        font-family: 3rem;
+    }
+}

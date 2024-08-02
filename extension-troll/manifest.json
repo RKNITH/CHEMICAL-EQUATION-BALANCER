@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Troll image",
+  "version": "1.0",
+  "description": "Troll change image",
+  
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "jquery.min.js",
+        "config.js",
+        "content.js"
+      ],
+      "css": [
+        "style.css"
+      ]
+    }
+  ],
+  "permissions": ["activeTab", "tabs"]
+}
